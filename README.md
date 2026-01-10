@@ -19,10 +19,12 @@ cp .env.example .env
 cp .env.example .env.prod
 ```
 - Build and start the container: 
+
+development: 
 ```bash
 docker compose -f docker-compose.dev.yml up -d --build
 ```
-or
+production: 
 ```bash
 docker compose -f docker-compose.prod.yml up -d --build
 ```
