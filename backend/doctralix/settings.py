@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
-from dotenv import load_dotenv
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -38,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	"accounts",
+	"assignment",
+	"classroom",
+	"subject"
 ]
 
 MIDDLEWARE = [
@@ -52,7 +55,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'doctralix.urls'
 
-TEMPLATES = [
+TEMPLATES = [ # type: ignore
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
@@ -74,7 +77,7 @@ WSGI_APPLICATION = 'doctralix.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 
-DATABASES = {
+DATABASES = { # type: ignore
 	'default': {
 		'ENGINE': 'django.db.backends.postgresql',
 		'NAME': os.getenv("POSTGRES_DB"),
