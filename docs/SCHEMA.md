@@ -78,7 +78,7 @@ Tightly coupled Model:
 
 Reasoning:
 
-> Why would a principal create an assignment 🐧💀? We need people who can manage everything behind the scene.
+> Why would a principal/admins create(s) an assignment 🐧💀? We need people who can manage everything behind the scene.
 
 ### 2. Student (V1.0)
 
@@ -90,7 +90,7 @@ Permission:
 
 Tightly coupled Model:
 
-* User (R/U → Himself/Herself)
+* User (R/U → Himself/Herself) <!--Password only-->
 * Account (R/U) + (R → Other people)
 * Assignment (R)
 * Submission (C/R/U/D)
