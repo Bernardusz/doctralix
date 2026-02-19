@@ -10,3 +10,15 @@ venv/
 .venv/
 node_modules/
 .env.prod
+.mypy_cache/
+.pytest_cache/
+coverage.xml
+htmlcov/
+.tox/
+dist/
+build/
+*.egg-info/
+.DS_Store
+.vscode/
+.idea/
+*.log
