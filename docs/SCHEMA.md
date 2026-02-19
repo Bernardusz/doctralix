@@ -16,6 +16,7 @@
 * user → OneToOne(user)
 * full_name
 * created_at
+* classroom = FK(classroom) → Per User there's only one classroom, But classroom can have many students.
 
 ### 3. Classroom
 
@@ -23,6 +24,7 @@
 
 * name
 * wali_kelas → FK(User)
+* slug
 
 ### 4. Subject
 
@@ -31,6 +33,7 @@
 * name
 * classroom
 * teacher → ManyToMany(User) <!--Every Subject has many teachers-->
+* slug
 
 ### 5. Assignment
 
@@ -42,7 +45,8 @@
 * subject → FK(Subject)
 * due_date
 * created_at
-* edited: boolean
+* updated_at
+* slug
 
 ### 6. Submission
 
@@ -53,6 +57,7 @@
 * file
 * grade
 * submitted_at
+* id
 
 ## Group Schema
 
