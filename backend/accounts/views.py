@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def index_view(request: HttpRequest) -> HttpResponse:
 	return render(request, 'index.html')
+
+def login_page(request: HttpRequest) -> HttpResponse:
+	return render(request, 'login_page.html')

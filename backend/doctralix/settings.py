@@ -27,6 +27,8 @@ DEBUG = os.getenv("DEBUG", "False") == "True"
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost").split(',')
 
+LOGIN_REDIRECT_URL = "/"
+LOGIN_URL = "/login"
 
 # Application definition
 
